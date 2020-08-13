@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Kolta</string>
+    <string name="sigin">SIGN IN</string>
+    <string name="new_account">NEW ACCOUNT</string>
+    <string name="user_label">Username</string>
+    <string name="password_label">Password</string>
+    <string name="email_label">Email Address</string>
+    <string name="nim_label">NIM</string>
+    <string name="nip_label">NIP</string>
+    <string name="nama_label">Nama</string>
+    <string name="prodi_label">Prodi</string>
+    <string name="continue_label">Continue</string>
+    <string name="regstud_label">Register as a Student</string>
+    <string name="regteach_label">Register as a Teacher</string>
+    <string name="choosestud_label">Mahasiswa</string>
+    <string name="choooseteach_label">Dosen</string>
+    <string name="editprofile_label">Edit Profile</string>
+
+
+</resources>

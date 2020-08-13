@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "200233468656",
+    "firebase_url": "https://kolta-23628.firebaseio.com",
+    "project_id": "kolta-23628",
+    "storage_bucket": "kolta-23628.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:200233468656:android:7e73d4cc903352aadcf835",
+        "android_client_info": {
+          "package_name": "com.koltaapp.kolta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "200233468656-eb2dnb2khomq901hmufaptvvk39ah4oq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbdJfQnlh9ZtuXTTVtwDugV7mEm9WKdRw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "200233468656-eb2dnb2khomq901hmufaptvvk39ah4oq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
