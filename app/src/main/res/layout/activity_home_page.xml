@@ -162,6 +162,7 @@
                 android:layout_height="wrap_content">
 
                 <ImageView
+                    android:id="@+id/revisi_page"
                     android:layout_width="64dp"
                     android:layout_height="64dp"
                     android:src="@drawable/icon_bimbingan" />

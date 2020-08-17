@@ -19,7 +19,7 @@ import com.squareup.picasso.Picasso;
 
 public class HomePageTeacherActivity extends AppCompatActivity {
 
-    ImageView photo_home_user,page_bimbingan,page_mahasiswa,page_jadwal,page_kehadiran;
+    ImageView photo_home_user,page_bimbingan,page_revisi,page_mahasiswa,page_jadwal,page_kehadiran;
     TextView nama,nip;
 
     DatabaseReference reference;
@@ -43,6 +43,7 @@ public class HomePageTeacherActivity extends AppCompatActivity {
         page_kehadiran = findViewById(R.id.page_kehadiran);
         page_mahasiswa = findViewById(R.id.page_mahasiswa);
         page_jadwal = findViewById(R.id.page_jadwal);
+        page_revisi = findViewById(R.id.page_revisi);
 
 
         reference = FirebaseDatabase.getInstance().getReference()
@@ -99,6 +100,14 @@ public class HomePageTeacherActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent gotojadwal = new Intent(HomePageTeacherActivity.this,JadwalTeacherAct.class);
+                startActivity(gotojadwal);
+            }
+        });
+
+        page_revisi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent gotojadwal = new Intent(HomePageTeacherActivity.this,RevisiMainAct.class);
                 startActivity(gotojadwal);
             }
         });

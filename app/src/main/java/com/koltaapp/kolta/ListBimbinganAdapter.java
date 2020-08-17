@@ -38,10 +38,12 @@ public class ListBimbinganAdapter extends RecyclerView.Adapter<ListBimbinganAdap
         holder.xnama_tugas.setText(listBimbinganItems.get(position).getNama_tugas());
         holder.xdeskripsi.setText(listBimbinganItems.get(position).getDeskripsi());
         holder.xdate.setText(listBimbinganItems.get(position).getTanggal_pengumpulan());
+        holder.xdate_pertemuan.setText(listBimbinganItems.get(position).getTanggal_pertemuan());
 
         final String getNamaTugas = listBimbinganItems.get(position).getNama_tugas();
         final String getDeskripsiTugas = listBimbinganItems.get(position).getDeskripsi();
         final String getDate = listBimbinganItems.get(position).getTanggal_pengumpulan();
+        final String getDate_pertemuan = listBimbinganItems.get(position).getTanggal_pertemuan();
         final String getUsername = listBimbinganItems.get(position).getUsername();
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
@@ -51,6 +53,7 @@ public class ListBimbinganAdapter extends RecyclerView.Adapter<ListBimbinganAdap
                 gotodetailbimbingan.putExtra("nama_tugas", getNamaTugas);
                 gotodetailbimbingan.putExtra("deskripsi", getDeskripsiTugas);
                 gotodetailbimbingan.putExtra("tanggal", getDate);
+                gotodetailbimbingan.putExtra("tanggal_pertemuan", getDate_pertemuan);
                 gotodetailbimbingan.putExtra("username", getUsername);
                 context.startActivity(gotodetailbimbingan);
             }
@@ -66,7 +69,7 @@ public class ListBimbinganAdapter extends RecyclerView.Adapter<ListBimbinganAdap
 
     class  MyViewHolder extends RecyclerView.ViewHolder{
 
-        TextView xnama_tugas,xdeskripsi,xdate;
+        TextView xnama_tugas,xdeskripsi,xdate,xdate_pertemuan;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -74,6 +77,7 @@ public class ListBimbinganAdapter extends RecyclerView.Adapter<ListBimbinganAdap
             xnama_tugas = itemView.findViewById(R.id.xnama_tugas);
             xdeskripsi = itemView.findViewById(R.id.xdeskripsi);
             xdate = itemView.findViewById(R.id.xdate);
+            xdate_pertemuan = itemView.findViewById(R.id.xdate_pertemuan);
         }
     }
 

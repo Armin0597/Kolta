@@ -26,7 +26,7 @@ import java.util.ArrayList;
 
 public class TaskDetailAct extends AppCompatActivity {
 
-    TextView nama_tugas,deskripsi,xdate;
+    TextView nama_tugas,deskripsi,xdate,xdate_pertemuan;
     DatabaseReference reference,reference2;
     Button btn_back;
     ImageView photo_profile;
@@ -49,16 +49,19 @@ public class TaskDetailAct extends AppCompatActivity {
         String nama_tugas_baru = getIntent().getStringExtra("nama_tugas");
         String deskripsi_baru = getIntent().getStringExtra("deskripsi");
         String tanggal_baru = getIntent().getStringExtra("tanggal");
+        String tanggal_pertemuan = getIntent().getStringExtra("tanggal_pertemuan");
         final String username_baru = getIntent().getStringExtra("username");
 
         nama_tugas = findViewById(R.id.nama_tugas);
         deskripsi = findViewById(R.id.deskripsi);
         xdate = findViewById(R.id.xdate);
+        xdate_pertemuan = findViewById(R.id.xdate_pertemuan);
         btn_back = findViewById(R.id.btn_back);
         photo_profile = findViewById(R.id.photo_profile);
 
         nama_tugas.setText(nama_tugas_baru);
         xdate.setText(tanggal_baru);
+        xdate_pertemuan.setText(tanggal_pertemuan);
         deskripsi.setText(deskripsi_baru);
 
         list_draft_student = findViewById(R.id.list_draft_student);

@@ -19,7 +19,7 @@ import com.squareup.picasso.Picasso;
 
 public class HomePageActivity extends AppCompatActivity {
 
-    ImageView photo_home_user,dosen_page,bimbingan_page,kehadiran_page,jadwal_page,finaldoc_page;
+    ImageView photo_home_user,dosen_page,bimbingan_page,revisi_page,kehadiran_page,jadwal_page,finaldoc_page;
     TextView nama,nim;
 
     DatabaseReference reference;
@@ -40,6 +40,7 @@ public class HomePageActivity extends AppCompatActivity {
         nim = findViewById(R.id.nim);
         photo_home_user = findViewById(R.id.photo_home_user);
         bimbingan_page = findViewById(R.id.bimbingan_page);
+        revisi_page = findViewById(R.id.revisi_page);
         kehadiran_page = findViewById(R.id.kehadiran_page);
         dosen_page = findViewById(R.id.dosen_page);
         jadwal_page = findViewById(R.id.jadwal_page);
@@ -50,6 +51,14 @@ public class HomePageActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent gotobimbinganpage = new Intent(HomePageActivity.this, StudentBimbinganMainAct.class);
                 startActivity(gotobimbinganpage);
+            }
+        });
+
+        revisi_page.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent gotorevisi = new Intent(HomePageActivity.this, StudentBimbinganMainAct.class);
+                startActivity(gotorevisi);
             }
         });
 

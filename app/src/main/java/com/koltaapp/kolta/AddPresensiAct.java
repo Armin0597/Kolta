@@ -181,6 +181,7 @@ public class AddPresensiAct extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent gotopresensi = new Intent(AddPresensiAct.this, PresensiStudentAct.class);
+                gotopresensi.putExtra("username",new_username);
                 startActivity(gotopresensi);
             }
         });

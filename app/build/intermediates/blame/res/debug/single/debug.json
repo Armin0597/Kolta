@@ -1,0 +1,426 @@
+[
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_arrow_back.png.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\drawable\\ic_arrow_back.png"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\anim_bottom_to_top.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\anim\\bottom_to_top.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_icon_bimbingan.png.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\drawable\\icon_bimbingan.png"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_profil_teacher.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\activity_profil_teacher.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_choose_login_role.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\activity_choose_login_role.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_list_student_kehandiran.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\list_student_kehandiran.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bg_input_one.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\drawable\\bg_input_one.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_calendar_medium_grey.png.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\drawable\\ic_calendar_medium_grey.png"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_list_berkasfin_item.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\list_berkasfin_item.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_dosen_list.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\activity_dosen_list.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_add_task.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\activity_add_task.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_image_usersignup.png.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\drawable\\image_usersignup.png"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_icon_absen.png.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\drawable\\icon_absen.png"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_choose_role.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\activity_choose_role.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_list_dosen_item.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\list_dosen_item.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\font_mmbold.ttf.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\font\\mmbold.ttf"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_list_revisi_main_item.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\list_revisi_main_item.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_anggaphoto.jpeg.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\drawable\\anggaphoto.jpeg"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_attach.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\drawable\\ic_attach.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_dosen_detail.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\activity_dosen_detail.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bg_view_circle_picture.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\drawable\\bg_view_circle_picture.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_home_page_teacher_activity.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\activity_home_page_teacher_activity.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\font_mmedium.ttf.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\font\\mmedium.ttf"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_icon_nopic.png.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\drawable\\icon_nopic.png"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_student_bimbingan_main.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\activity_student_bimbingan_main.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_list_student_bimbingan.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\list_student_bimbingan.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_drive_file.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\drawable\\ic_drive_file.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_list_revisi_task_item.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\list_revisi_task_item.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_revisi_main.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\activity_revisi_main.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_list_bimbingan_item.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\list_bimbingan_item.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\anim_top_to_bottom.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\anim\\top_to_bottom.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_list_presensi_item.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\list_presensi_item.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_student_presensi_main.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\item_student_presensi_main.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_register_student_one.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\activity_register_student_one.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_user_signup.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\activity_user_signup.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bg_input_two.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\drawable\\bg_input_two.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bg_btn_blue_primary.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\drawable\\bg_btn_blue_primary.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_jadwal_student.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\activity_jadwal_student.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_home_page.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\activity_home_page.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bg_layout_white.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\drawable\\bg_layout_white.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bg_btn_white_primary.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\drawable\\bg_btn_white_primary.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_arrow_back_black_24dp.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\drawable\\ic_arrow_back_black_24dp.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_revisi_task.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\activity_revisi_task.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_list_draf_bimbingan_item.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\list_draf_bimbingan_item.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_calendar.png.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\drawable\\ic_calendar.png"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_register_student_two.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\activity_register_student_two.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_btn_grey_primary.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\drawable\\btn_grey_primary.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_final_doc.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\activity_final_doc.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_file_red.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\drawable\\ic_file_red.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_luffy.jpg.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\drawable\\luffy.jpg"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_kehadiran_main.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\activity_kehadiran_main.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_bimbingan_student.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\activity_bimbingan_student.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_list_student_task.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\list_student_task.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_list_jadwal_teacher_item.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\list_jadwal_teacher_item.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_get_started.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\activity_get_started.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_student_presensi_main.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\activity_student_presensi_main.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_sign_in_teacher.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\activity_sign_in_teacher.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\font_mregular.ttf.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\font\\mregular.ttf"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_icon_finaldoc.png.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\drawable\\icon_finaldoc.png"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bg_input_disable.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\drawable\\bg_input_disable.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_register_teacher_two.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\activity_register_teacher_two.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bg_btn_blue_circle.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\drawable\\bg_btn_blue_circle.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_icon_tanggal.png.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\drawable\\icon_tanggal.png"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_student_list.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\activity_student_list.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_arr_back_white.png.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\drawable\\ic_arr_back_white.png"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_task_teacher.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\activity_task_teacher.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bg_btn_blue_dark.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\drawable\\bg_btn_blue_dark.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_back.png.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\drawable\\ic_back.png"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_add_presensi.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\activity_add_presensi.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_register_teacher_one.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\activity_register_teacher_one.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_splash_screen.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\activity_splash_screen.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_profil.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\activity_profil.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\anim_app_splash.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\anim\\app_splash.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_edit_profil.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\activity_edit_profil.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_student_detail.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\activity_student_detail.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_list_draft_student_item.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\list_draft_student_item.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_task_main.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\activity_task_main.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_add_revisi.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\activity_add_revisi.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\font_mlight.ttf.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\font\\mlight.ttf"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_student_bimbingan_detail.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\activity_student_bimbingan_detail.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_jadwal_teacher.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\activity_jadwal_teacher.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_task_detail.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\activity_task_detail.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_list_jadwal_student_item.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\list_jadwal_student_item.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_arrow_back_white.png.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\drawable\\ic_arrow_back_white.png"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_icon_dosen.png.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\drawable\\icon_dosen.png"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_presensi_student.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\activity_presensi_student.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bg_input_edit.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\drawable\\bg_input_edit.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_profile_edit_teacher.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\activity_profile_edit_teacher.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_list_student_item.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\list_student_item.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_signin.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\activity_signin.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_revisi_detail.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\activity_revisi_detail.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_calendar_grey.png.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\drawable\\ic_calendar_grey.png"
+    }
+]
