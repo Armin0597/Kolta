@@ -57,7 +57,7 @@ public class HomePageActivity extends AppCompatActivity {
         revisi_page.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent gotorevisi = new Intent(HomePageActivity.this, StudentBimbinganMainAct.class);
+                Intent gotorevisi = new Intent(HomePageActivity.this, StudentRevisiMainAct.class);
                 startActivity(gotorevisi);
             }
         });

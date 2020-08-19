@@ -1,15 +1,16 @@
 package com.koltaapp.kolta;
 
 public class StudentPresensiItem {
-    String username,kegiatan,tanggal;
+    String username,kegiatan,tanggal_pengumpulan,tanggal_pertemuan;
 
     public StudentPresensiItem() {
     }
 
-    public StudentPresensiItem(String username, String kegiatan, String tanggal) {
+    public StudentPresensiItem(String username, String kegiatan, String tanggal_pengumpulan, String tanggal_pertemuan) {
         this.username = username;
         this.kegiatan = kegiatan;
-        this.tanggal = tanggal;
+        this.tanggal_pengumpulan = tanggal_pengumpulan;
+        this.tanggal_pertemuan = tanggal_pertemuan;
     }
 
     public String getUsername() {
@@ -28,11 +29,19 @@ public class StudentPresensiItem {
         this.kegiatan = kegiatan;
     }
 
-    public String getTanggal() {
-        return tanggal;
+    public String getTanggal_pengumpulan() {
+        return tanggal_pengumpulan;
     }
 
-    public void setTanggal(String tanggal) {
-        this.tanggal = tanggal;
+    public void setTanggal_pengumpulan(String tanggal_pengumpulan) {
+        this.tanggal_pengumpulan = tanggal_pengumpulan;
+    }
+
+    public String getTanggal_pertemuan() {
+        return tanggal_pertemuan;
+    }
+
+    public void setTanggal_pertemuan(String tanggal_pertemuan) {
+        this.tanggal_pertemuan = tanggal_pertemuan;
     }
 }

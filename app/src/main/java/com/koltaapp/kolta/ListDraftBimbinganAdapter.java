@@ -1,6 +1,9 @@
 package com.koltaapp.kolta;
 
+import android.app.DownloadManager;
 import android.content.Context;
+import android.net.Uri;
+import android.os.Environment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,6 +12,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.io.File;
 import java.util.ArrayList;
 
 public class ListDraftBimbinganAdapter extends RecyclerView.Adapter<ListDraftBimbinganAdapter.MyViewHolder> {
@@ -28,8 +32,16 @@ public class ListDraftBimbinganAdapter extends RecyclerView.Adapter<ListDraftBim
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ListDraftBimbinganAdapter.MyViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull final ListDraftBimbinganAdapter.MyViewHolder holder, final int position) {
         holder.xnama_file.setText(listDrafBimbinganItems.get(position).getNama_file());
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                downloadFile(holder.xnama_file.getContext(),listDrafBimbinganItems.get(position).getNama_file(),
+                        Environment.getExternalStorageState(new File(Environment.DIRECTORY_DOWNLOADS)),listDrafBimbinganItems.get(position).getUrl_document());
+            }
+        });
 
     }
 
@@ -47,6 +59,17 @@ public class ListDraftBimbinganAdapter extends RecyclerView.Adapter<ListDraftBim
             xnama_file = itemView.findViewById(R.id.xnama_file);
 
         }
+    }
+
+    public long downloadFile(Context context, String fileName, String destinationDirectory, String url) {
+        DownloadManager downloadManager = (DownloadManager) context.getSystemService(context.DOWNLOAD_SERVICE);
+        Uri uri = Uri.parse(url);
+        DownloadManager.Request request = new DownloadManager.Request(uri);
+        request.setMimeType("application/vnd.openxmlformats-officedocument.wordprocessingml.document");
+        request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
+        request.setDestinationInExternalFilesDir(context, destinationDirectory, fileName );
+
+        return downloadManager.enqueue(request);
     }
 }
 

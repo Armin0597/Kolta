@@ -1,15 +1,21 @@
 package com.koltaapp.kolta;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.DatePickerDialog;
+import android.content.ContentResolver;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.database.Cursor;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.net.Uri;
 import android.os.Bundle;
+import android.provider.OpenableColumns;
 import android.view.View;
+import android.webkit.MimeTypeMap;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.DatePicker;
@@ -17,11 +23,15 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
 
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
+import com.google.firebase.storage.UploadTask;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -31,10 +41,14 @@ public class AddTaskAct extends AppCompatActivity {
 
     Button btn_save;
     LinearLayout btn_back;
-    EditText nama_mhs,edit_nama_tugas,edit_deskripsi_tugas,edit_tanggal,edit_tanggal_pertemuan;
+    EditText nama_mhs,edit_nama_tugas,edit_file_tugas,edit_deskripsi_tugas,edit_tanggal,edit_tanggal_pertemuan;
     DatePickerDialog.OnDateSetListener mDatesetListener,mDatesetListener_pertemuan;
 
     DatabaseReference reference,reference2,ref_username_dosen,ref_username_mhs;
+    StorageReference storage;
+
+    Uri doc_location;
+    Integer doc_max = 1;
 
     String USERNAME_KEY = "usernamekey";
     String username_key = "";
@@ -52,6 +66,7 @@ public class AddTaskAct extends AppCompatActivity {
 
         nama_mhs = findViewById(R.id.nama_mhs);
         edit_nama_tugas = findViewById(R.id.edit_nama_tugas);
+        edit_file_tugas = findViewById(R.id.edit_file_tugas);
         edit_deskripsi_tugas = findViewById(R.id.edit_deskripsi_tugas);
         edit_tanggal = findViewById(R.id.edit_tanggal);
         edit_tanggal_pertemuan = findViewById(R.id.edit_tanggal_pertemuan);
@@ -111,6 +126,13 @@ public class AddTaskAct extends AppCompatActivity {
             }
         };
 
+        edit_file_tugas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                findDoc();
+            }
+        });
+
         reference = FirebaseDatabase.getInstance().getReference().child("Mahasiswa").child(new_username);
         reference.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
@@ -127,29 +149,42 @@ public class AddTaskAct extends AppCompatActivity {
         btn_save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                storage = FirebaseStorage.getInstance().getReference().child("Drafusers").child(username_key_new).child(edit_nama_tugas.getText().toString());
                 reference2 = FirebaseDatabase.getInstance().getReference().child("Tugas")
                         .child(username_key_new).child("bimbingan").child(new_username).child("tugas").child(edit_nama_tugas.getText().toString());
-                reference2.addListenerForSingleValueEvent(new ValueEventListener() {
+
+                final String fileName;
+                Cursor cursor = getContentResolver().query(doc_location,null,null,null,null);
+                cursor.moveToFirst();
+                int idx = cursor.getColumnIndex(OpenableColumns.DISPLAY_NAME);
+                fileName = cursor.getString(idx);
+                cursor.close();
+
+                final StorageReference storageReference =
+                        storage.child(fileName);
+                storageReference.putFile(doc_location).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                     @Override
-                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                        reference2.getRef().child("nama_tugas").setValue(edit_nama_tugas.getText().toString());
-                        reference2.getRef().child("deskripsi").setValue(edit_deskripsi_tugas.getText().toString());
-                        reference2.getRef().child("tanggal_pengumpulan").setValue(edit_tanggal.getText().toString());
-                        reference2.getRef().child("tanggal_pertemuan").setValue(edit_tanggal_pertemuan.getText().toString());
-                        reference2.getRef().child("username").setValue(new_username);
+                    public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+                        storageReference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+                            @Override
+                            public void onSuccess(Uri uri) {
+                                String uri_doc = uri.toString();
+                                reference2.getRef().child("url_document").setValue(uri_doc);
+                                reference2.getRef().child("nama_file").setValue(fileName);
+                                reference2.getRef().child("nama_tugas").setValue(edit_nama_tugas.getText().toString());
+                                reference2.getRef().child("deskripsi").setValue(edit_deskripsi_tugas.getText().toString());
+                                reference2.getRef().child("tanggal_pertemuan").setValue(edit_tanggal_pertemuan.getText().toString());
+                                reference2.getRef().child("tanggal_pengumpulan").setValue(edit_tanggal.getText().toString());
+                                reference2.getRef().child("username").setValue(new_username);
+                                //ubah state menjadi loading
+                                btn_save.setEnabled(false);
+                                btn_save.setText("Loading ...");
 
-                        //ubah state menjadi loading
-                        btn_save.setEnabled(false);
-                        btn_save.setText("Loading ...");
-
-                        Intent gotobimbingan = new Intent(AddTaskAct.this, BimbinganStudentAct.class);
-                        gotobimbingan.putExtra("username",new_username);
-                        startActivity(gotobimbingan);
-                    }
-
-                    @Override
-                    public void onCancelled(@NonNull DatabaseError databaseError) {
-
+                                Intent gotobimbingan = new Intent(AddTaskAct.this, BimbinganStudentAct.class);
+                                gotobimbingan.putExtra("username",new_username);
+                                startActivity(gotobimbingan);
+                            }
+                        });
                     }
                 });
                 ref_username_dosen = FirebaseDatabase.getInstance().getReference().child("Tugas").child(username_key_new).child("username");
@@ -189,6 +224,37 @@ public class AddTaskAct extends AppCompatActivity {
             }
         });
 
+    }
+
+    String getFileExtension(Uri uri){
+        ContentResolver contentResolver = getContentResolver();
+        MimeTypeMap mimeTypeMap = MimeTypeMap.getSingleton();
+        return mimeTypeMap.getExtensionFromMimeType(contentResolver.getType(uri));
+    }
+
+    //menemukan dokumen
+    public void findDoc(){
+        Intent doc = new Intent();
+        doc.setType("application/vnd.openxmlformats-officedocument.wordprocessingml.document");
+        doc.setAction(Intent.ACTION_GET_CONTENT);
+        startActivityForResult(doc, doc_max);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if (requestCode == doc_max && resultCode == RESULT_OK && data != null && data.getData() != null) {
+            doc_location = data.getData();
+
+            final String fileName;
+            Cursor cursor = getContentResolver().query(doc_location,null,null,null,null);
+            cursor.moveToFirst();
+            int idx = cursor.getColumnIndex(OpenableColumns.DISPLAY_NAME);
+            fileName = cursor.getString(idx);
+            cursor.close();
+            edit_file_tugas.setText(fileName);
+        }
     }
 
     public  void getUsernameLocal(){

@@ -30,7 +30,8 @@ public class StudentPresensiAdapter extends RecyclerView.Adapter<StudentPresensi
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         holder.xkegiatan.setText(studentPresensiItems.get(position).getKegiatan());
-        holder.xdate.setText(studentPresensiItems.get(position).getTanggal());
+        holder.xdate.setText(studentPresensiItems.get(position).getTanggal_pengumpulan());
+        holder.xdate_pertemuan.setText(studentPresensiItems.get(position).getTanggal_pertemuan());
 
     }
 
@@ -41,12 +42,13 @@ public class StudentPresensiAdapter extends RecyclerView.Adapter<StudentPresensi
 
     class MyViewHolder extends RecyclerView.ViewHolder{
 
-        TextView xkegiatan,xdate;
+        TextView xkegiatan,xdate,xdate_pertemuan;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
             xkegiatan = itemView.findViewById(R.id.xkegiatan);
             xdate = itemView.findViewById(R.id.xdate);
+            xdate_pertemuan = itemView.findViewById(R.id.xdate_pertemuan);
 
         }
     }

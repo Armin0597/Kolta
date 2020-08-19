@@ -24,6 +24,8 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.koltaapp.kolta.StudentRevisiDetailAct" />
+        <activity android:name="com.koltaapp.kolta.StudentRevisiMainAct" />
         <activity android:name="com.koltaapp.kolta.RevisiDetailAct" />
         <activity android:name="com.koltaapp.kolta.AddRevisiAct" />
         <activity android:name="com.koltaapp.kolta.RevisiTaskAct" />

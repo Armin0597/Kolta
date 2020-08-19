@@ -41,6 +41,8 @@ public class ListBimbinganAdapter extends RecyclerView.Adapter<ListBimbinganAdap
         holder.xdate_pertemuan.setText(listBimbinganItems.get(position).getTanggal_pertemuan());
 
         final String getNamaTugas = listBimbinganItems.get(position).getNama_tugas();
+        final String getNamaFile = listBimbinganItems.get(position).getNama_file();
+        final String getUrlDocument = listBimbinganItems.get(position).getUrl_document();
         final String getDeskripsiTugas = listBimbinganItems.get(position).getDeskripsi();
         final String getDate = listBimbinganItems.get(position).getTanggal_pengumpulan();
         final String getDate_pertemuan = listBimbinganItems.get(position).getTanggal_pertemuan();
@@ -51,6 +53,8 @@ public class ListBimbinganAdapter extends RecyclerView.Adapter<ListBimbinganAdap
             public void onClick(View v) {
                 Intent gotodetailbimbingan = new Intent(context, TaskDetailAct.class);
                 gotodetailbimbingan.putExtra("nama_tugas", getNamaTugas);
+                gotodetailbimbingan.putExtra("nama_file", getNamaFile);
+                gotodetailbimbingan.putExtra("url_document", getUrlDocument);
                 gotodetailbimbingan.putExtra("deskripsi", getDeskripsiTugas);
                 gotodetailbimbingan.putExtra("tanggal", getDate);
                 gotodetailbimbingan.putExtra("tanggal_pertemuan", getDate_pertemuan);

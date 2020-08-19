@@ -1199,6 +1199,7 @@ id activity_chooser_view_content
 id add
 id add_bimbingan
 id add_draf_final
+id add_draf_revisi
 id add_presensi
 id add_revisi
 id add_task
@@ -1278,7 +1279,9 @@ id enterAlwaysCollapsed
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
+id file_bimbingan
 id file_revisi
+id file_tugas
 id fill
 id fill_horizontal
 id fill_vertical
@@ -1325,6 +1328,7 @@ id list_draft_student
 id list_finaldoc
 id list_item
 id list_jadwal_teacher
+id list_revisi
 id list_student
 id list_student_kehadiran
 id list_student_place
@@ -1374,6 +1378,7 @@ id progress_circular
 id progress_horizontal
 id radio
 id recyclerView
+id revisi_page
 id revisi_place
 id revisi_task_place
 id right
@@ -1578,6 +1583,8 @@ layout activity_student_bimbingan_main
 layout activity_student_detail
 layout activity_student_list
 layout activity_student_presensi_main
+layout activity_student_revisi_detail
+layout activity_student_revisi_main
 layout activity_task_detail
 layout activity_task_main
 layout activity_task_teacher
@@ -1606,7 +1613,10 @@ layout list_draft_student_item
 layout list_jadwal_student_item
 layout list_jadwal_teacher_item
 layout list_presensi_item
+layout list_revisi_draf_item
+layout list_revisi_draf_teacher_item
 layout list_revisi_main_item
+layout list_revisi_student_item
 layout list_revisi_task_item
 layout list_student_bimbingan
 layout list_student_item

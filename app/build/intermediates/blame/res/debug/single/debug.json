@@ -32,6 +32,10 @@
         "source": "D:\\Kolta\\app\\src\\main\\res\\drawable\\bg_input_one.xml"
     },
     {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_list_revisi_draf_teacher_item.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\list_revisi_draf_teacher_item.xml"
+    },
+    {
         "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_calendar_medium_grey.png.flat",
         "source": "D:\\Kolta\\app\\src\\main\\res\\drawable\\ic_calendar_medium_grey.png"
     },
@@ -60,12 +64,12 @@
         "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\activity_choose_role.xml"
     },
     {
-        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_list_dosen_item.xml.flat",
-        "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\list_dosen_item.xml"
-    },
-    {
         "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\font_mmbold.ttf.flat",
         "source": "D:\\Kolta\\app\\src\\main\\res\\font\\mmbold.ttf"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_list_dosen_item.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\list_dosen_item.xml"
     },
     {
         "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_list_revisi_main_item.xml.flat",
@@ -172,6 +176,10 @@
         "source": "D:\\Kolta\\app\\src\\main\\res\\drawable\\ic_arrow_back_black_24dp.xml"
     },
     {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_student_revisi_detail.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\activity_student_revisi_detail.xml"
+    },
+    {
         "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_revisi_task.xml.flat",
         "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\activity_revisi_task.xml"
     },
@@ -210,6 +218,10 @@
     {
         "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
         "source": "D:\\Kolta\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_student_revisi_main.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\activity_student_revisi_main.xml"
     },
     {
         "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_luffy.jpg.flat",
@@ -288,6 +300,10 @@
         "source": "D:\\Kolta\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_list_revisi_draf_item.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\list_revisi_draf_item.xml"
+    },
+    {
         "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
         "source": "D:\\Kolta\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
     },
@@ -354,6 +370,10 @@
     {
         "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
         "source": "D:\\Kolta\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_list_revisi_student_item.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\list_revisi_student_item.xml"
     },
     {
         "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_task_main.xml.flat",

@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.app.DownloadManager;
 import android.app.ProgressDialog;
 import android.content.ContentResolver;
 import android.content.Intent;
@@ -13,8 +14,11 @@ import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
 import android.provider.MediaStore;
 import android.provider.OpenableColumns;
+import android.text.SpannableString;
+import android.text.style.UnderlineSpan;
 import android.view.View;
 import android.webkit.MimeTypeMap;
 import android.widget.Button;
@@ -41,7 +45,7 @@ import java.util.UUID;
 
 public class StudentBimbinganDetailAct extends AppCompatActivity {
 
-    TextView nama_tugas,deskripsi,xdate,nama_mhs;
+    TextView nama_tugas,deskripsi,xdate,xdate_pertemuan,nama_mhs,file_bimbingan;
     Button btn_back,add_bimbingan;
     RecyclerView list_draft;
 
@@ -66,24 +70,54 @@ public class StudentBimbinganDetailAct extends AppCompatActivity {
         getUsernameLocal();
 
         String nama_tugas_baru = getIntent().getStringExtra("nama_tugas");
+        final String nama_file_baru = getIntent().getStringExtra("nama_file");
+        final String url_file_baru = getIntent().getStringExtra("url_document");
         String deskripsi_baru = getIntent().getStringExtra("deskripsi");
         String tanggal_baru = getIntent().getStringExtra("tanggal");
+        String tanggal_pertemuan = getIntent().getStringExtra("tanggal_pertemuan");
         final String extras_username = getIntent().getStringExtra("username");
 
         nama_tugas = findViewById(R.id.nama_tugas);
         deskripsi = findViewById(R.id.deskripsi);
         xdate = findViewById(R.id.xdate);
+        xdate_pertemuan = findViewById(R.id.xdate_pertemuan);
         nama_mhs = findViewById(R.id.nama_mhs);
+        file_bimbingan = findViewById(R.id.file_bimbingan);
         btn_back = findViewById(R.id.btn_back);
         add_bimbingan = findViewById(R.id.add_bimbingan);
+
+        SpannableString content = new SpannableString(nama_file_baru);
+        content.setSpan(new UnderlineSpan(), 0, content.length(), 0);
 
         nama_tugas.setText(nama_tugas_baru);
         deskripsi.setText(deskripsi_baru);
         xdate.setText(tanggal_baru);
+        xdate_pertemuan.setText(tanggal_pertemuan);
+        file_bimbingan.setText(content);
 
         list_draft = findViewById(R.id.list_draft);
         list_draft.setLayoutManager(new LinearLayoutManager(this));
         listDraftStudentItems = new ArrayList<ListDraftStudentItem>();
+
+        file_bimbingan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                reference =FirebaseDatabase.getInstance().getReference().child("Tugas").child(username_key_new)
+                        .child(extras_username).child("tugas");
+                reference.addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                        downloadFile(this,nama_file_baru,
+                                Environment.getExternalStorageState(new File(Environment.DIRECTORY_DOWNLOADS)),url_file_baru);
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                    }
+                });
+            }
+        });
 
         reference2 = FirebaseDatabase.getInstance().getReference().child("Draf").child(username_key_new).child(nama_tugas_baru);
         reference2.addListenerForSingleValueEvent(new ValueEventListener() {
@@ -117,6 +151,18 @@ public class StudentBimbinganDetailAct extends AppCompatActivity {
                 startActivity(gotobimbingan);
             }
         });
+    }
+
+    public long downloadFile(ValueEventListener context, String fileName, String destinationDirectory, String url) {
+        final StudentBimbinganDetailAct c =this;
+        DownloadManager downloadManager = (DownloadManager) c.getSystemService(c.DOWNLOAD_SERVICE);
+        Uri uri = Uri.parse(url);
+        DownloadManager.Request request = new DownloadManager.Request(uri);
+        request.setMimeType("application/vnd.openxmlformats-officedocument.wordprocessingml.document");
+        request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
+        request.setDestinationInExternalFilesDir(c, destinationDirectory, fileName);
+
+        return downloadManager.enqueue(request);
     }
 
     String getFileExtension(Uri uri){
