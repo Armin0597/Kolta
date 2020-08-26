@@ -40,7 +40,10 @@ import com.google.firebase.storage.UploadTask;
 import com.squareup.picasso.Picasso;
 
 import java.io.File;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
+import java.util.Locale;
 import java.util.UUID;
 
 public class StudentBimbinganDetailAct extends AppCompatActivity {
@@ -52,7 +55,7 @@ public class StudentBimbinganDetailAct extends AppCompatActivity {
     ArrayList<ListDraftStudentItem> listDraftStudentItems;
     ListDraftStudentAdapter listDraftStudentAdapter;
 
-    DatabaseReference reference,reference2;
+    DatabaseReference reference,reference2,reference3;
     StorageReference storage;
 
     Uri doc_location;
@@ -62,6 +65,7 @@ public class StudentBimbinganDetailAct extends AppCompatActivity {
     String username_key = "";
     String username_key_new = "";
 
+    String nim = "";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -82,42 +86,42 @@ public class StudentBimbinganDetailAct extends AppCompatActivity {
         xdate = findViewById(R.id.xdate);
         xdate_pertemuan = findViewById(R.id.xdate_pertemuan);
         nama_mhs = findViewById(R.id.nama_mhs);
-        file_bimbingan = findViewById(R.id.file_bimbingan);
+        //file_bimbingan = findViewById(R.id.file_bimbingan);
         btn_back = findViewById(R.id.btn_back);
         add_bimbingan = findViewById(R.id.add_bimbingan);
 
-        SpannableString content = new SpannableString(nama_file_baru);
-        content.setSpan(new UnderlineSpan(), 0, content.length(), 0);
+        //SpannableString content = new SpannableString(nama_file_baru);
+        //content.setSpan(new UnderlineSpan(), 0, content.length(), 0);
 
         nama_tugas.setText(nama_tugas_baru);
         deskripsi.setText(deskripsi_baru);
         xdate.setText(tanggal_baru);
         xdate_pertemuan.setText(tanggal_pertemuan);
-        file_bimbingan.setText(content);
+        //file_bimbingan.setText(content);
 
         list_draft = findViewById(R.id.list_draft);
         list_draft.setLayoutManager(new LinearLayoutManager(this));
         listDraftStudentItems = new ArrayList<ListDraftStudentItem>();
 
-        file_bimbingan.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                reference =FirebaseDatabase.getInstance().getReference().child("Tugas").child(username_key_new)
-                        .child(extras_username).child("tugas");
-                reference.addListenerForSingleValueEvent(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                        downloadFile(this,nama_file_baru,
-                                Environment.getExternalStorageState(new File(Environment.DIRECTORY_DOWNLOADS)),url_file_baru);
-                    }
-
-                    @Override
-                    public void onCancelled(@NonNull DatabaseError databaseError) {
-
-                    }
-                });
-            }
-        });
+//        file_bimbingan.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                reference =FirebaseDatabase.getInstance().getReference().child("Tugas").child(username_key_new)
+//                        .child(extras_username).child("tugas");
+//                reference.addListenerForSingleValueEvent(new ValueEventListener() {
+//                    @Override
+//                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+//                        downloadFile(this,nama_file_baru,
+//                                Environment.getExternalStorageState(new File(Environment.DIRECTORY_DOWNLOADS)),url_file_baru);
+//                    }
+//
+//                    @Override
+//                    public void onCancelled(@NonNull DatabaseError databaseError) {
+//
+//                    }
+//                });
+//            }
+//        });
 
         reference2 = FirebaseDatabase.getInstance().getReference().child("Draf").child(username_key_new).child(nama_tugas_baru);
         reference2.addListenerForSingleValueEvent(new ValueEventListener() {
@@ -193,56 +197,69 @@ public class StudentBimbinganDetailAct extends AppCompatActivity {
 
         getUsernameLocal();
         final ProgressDialog pd = new ProgressDialog(this);
-        String nama_tugas_baru = getIntent().getStringExtra("nama_tugas");
+        final String nama_tugas_baru = getIntent().getStringExtra("nama_tugas");
 
-        final String fileName;
-        Cursor cursor = getContentResolver().query(doc_location,null,null,null,null);
-        cursor.moveToFirst();
-        int idx = cursor.getColumnIndex(OpenableColumns.DISPLAY_NAME);
-        fileName = cursor.getString(idx);
-        cursor.close();
+        reference3 = FirebaseDatabase.getInstance().getReference().child("Mahasiswa").child(username_key_new);
+        reference3.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                nim = dataSnapshot.child("nim").getValue().toString();
 
-        reference = FirebaseDatabase.getInstance().getReference()
-                .child("Draf").child(username_key_new).child(nama_tugas_baru).push();
-        storage = FirebaseStorage.getInstance().getReference().child("Drafusers").child(username_key_new).child(nama_tugas_baru);
+                reference = FirebaseDatabase.getInstance().getReference()
+                        .child("Draf").child(username_key_new).child(nama_tugas_baru).push();
+                storage = FirebaseStorage.getInstance().getReference().child("Drafusers").child(username_key_new).child(nama_tugas_baru);
 
-        //validasi file (apakah ada?)
-        if(doc_location != null) {
-            final StorageReference storageReference =
-                    storage.child(fileName);
+                long yourmilliseconds = System.currentTimeMillis();
+                SimpleDateFormat simpleDateFormat = new SimpleDateFormat("ddMMyyyykkmm");
+                Date resultdate = new Date(yourmilliseconds);
+                String time = simpleDateFormat.format(resultdate);
+                final String fileName = "bimb_"+nim+"_"+time+"."+getFileExtension(doc_location);
 
-            storageReference.putFile(doc_location)
-                    .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-                        @Override
-                        public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-                            storageReference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+                //validasi file (apakah ada?)
+                if(doc_location != null) {
+                    final StorageReference storageReference =
+                            storage.child(fileName);
+
+                    storageReference.putFile(doc_location)
+                            .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                                 @Override
-                                public void onSuccess(Uri uri) {
-                                    pd.dismiss();
-                                    String uri_doc = uri.toString();
-                                    reference.getRef().child("nama_file").setValue(fileName);
-                                    reference.getRef().child("url_document").setValue(uri_doc);
-                                    reference.getRef().child("mhs_id").setValue(username_key_new);
-                                }
-                            });
+                                public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+                                    storageReference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+                                        @Override
+                                        public void onSuccess(Uri uri) {
+                                            pd.dismiss();
+                                            String uri_doc = uri.toString();
+                                            reference.getRef().child("nama_file").setValue(fileName);
+                                            reference.getRef().child("url_document").setValue(uri_doc);
+                                            reference.getRef().child("mhs_id").setValue(username_key_new);
+                                        }
+                                    });
 
-                        }
-                    })
-                    .addOnFailureListener(new OnFailureListener() {
+                                }
+                            })
+                            .addOnFailureListener(new OnFailureListener() {
+                                @Override
+                                public void onFailure(@NonNull Exception exception) {
+                                    // Handle unsuccessful uploads
+                                    pd.dismiss();
+                                }
+                            }).addOnProgressListener(new OnProgressListener<UploadTask.TaskSnapshot>() {
                         @Override
-                        public void onFailure(@NonNull Exception exception) {
-                            // Handle unsuccessful uploads
-                            pd.dismiss();
+                        public void onProgress(@NonNull UploadTask.TaskSnapshot taskSnapshot) {
+                            double progressPercent = (100.00 * taskSnapshot.getBytesTransferred() / taskSnapshot.getTotalByteCount());
+                            pd.setMessage("Percent : " + (int) progressPercent + "%");
+                            pd.show();
                         }
-                    }).addOnProgressListener(new OnProgressListener<UploadTask.TaskSnapshot>() {
-                @Override
-                public void onProgress(@NonNull UploadTask.TaskSnapshot taskSnapshot) {
-                    double progressPercent = (100.00 * taskSnapshot.getBytesTransferred() / taskSnapshot.getTotalByteCount());
-                    pd.setMessage("Percent : " + (int) progressPercent + "%");
-                    pd.show();
+                    });
                 }
-            });
-        }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+
     }
 
 

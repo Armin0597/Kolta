@@ -43,7 +43,7 @@ import java.util.ArrayList;
 public class StudentRevisiDetailAct extends AppCompatActivity {
 
     TextView nama_tugas,deskripsi,xdate,file_revisi,xdate_pertemuan;
-    Button btn_back,add_draf_revisi;
+    Button btn_back;
     ImageView photo_profile;
 
     DownloadManager downloadManager;
@@ -86,12 +86,6 @@ public class StudentRevisiDetailAct extends AppCompatActivity {
         file_revisi = findViewById(R.id.file_revisi);
         btn_back = findViewById(R.id.btn_back);
         btn_back = findViewById(R.id.btn_back);
-        add_draf_revisi = findViewById(R.id.add_draf_revisi);
-
-        list_draft_student = findViewById(R.id.list_draft_student);
-        list_draft_student.setLayoutManager(new LinearLayoutManager(this));
-        listRevisiDraftStudentItems = new ArrayList<ListRevisiDraftStudentItem>();
-
 
         final SpannableString content = new SpannableString(nama_file_baru);
         content.setSpan(new UnderlineSpan(), 0, content.length(), 0);
@@ -135,31 +129,6 @@ public class StudentRevisiDetailAct extends AppCompatActivity {
             }
         });
 
-        reference3 = FirebaseDatabase.getInstance().getReference().child("RevisiDraf").child(username_key_new).child(nama_tugas_baru);
-        reference3.addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                for (DataSnapshot dataSnapshot1: dataSnapshot.getChildren()){
-                    ListRevisiDraftStudentItem p = dataSnapshot1.getValue(ListRevisiDraftStudentItem.class);
-                    listRevisiDraftStudentItems.add(p);
-                }
-                listRevisiDraftStudentAdapter = new ListRevisiDraftStudentAdapter(StudentRevisiDetailAct.this,listRevisiDraftStudentItems);
-                list_draft_student.setAdapter(listRevisiDraftStudentAdapter);
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
-
-            }
-        });
-
-        add_draf_revisi.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                findDoc();
-            }
-        });
-
         btn_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -170,87 +139,6 @@ public class StudentRevisiDetailAct extends AppCompatActivity {
         });
 
     }
-
-    String getFileExtension(Uri uri){
-        ContentResolver contentResolver = getContentResolver();
-        MimeTypeMap mimeTypeMap = MimeTypeMap.getSingleton();
-        return mimeTypeMap.getExtensionFromMimeType(contentResolver.getType(uri));
-    }
-
-    //menemukan dokumen
-    public void findDoc(){
-        Intent doc = new Intent();
-        doc.setType("application/vnd.openxmlformats-officedocument.wordprocessingml.document");
-        doc.setAction(Intent.ACTION_GET_CONTENT);
-        startActivityForResult(doc, doc_max);
-    }
-
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-
-        if (requestCode == doc_max && resultCode == RESULT_OK && data != null && data.getData() != null) {
-            doc_location = data.getData();
-            uploadDoc();
-        }
-    }
-
-    public void uploadDoc(){
-
-        getUsernameLocal();
-        final ProgressDialog pd = new ProgressDialog(this);
-        final String nama_tugas_baru = getIntent().getStringExtra("nama_revisi");
-
-        final String fileName;
-        Cursor cursor = getContentResolver().query(doc_location,null,null,null,null);
-        cursor.moveToFirst();
-        int idx = cursor.getColumnIndex(OpenableColumns.DISPLAY_NAME);
-        fileName = cursor.getString(idx);
-        cursor.close();
-
-        reference2 = FirebaseDatabase.getInstance().getReference()
-                .child("RevisiDraf").child(username_key_new).child(nama_tugas_baru).push();
-        storage = FirebaseStorage.getInstance().getReference().child("Drafusers").child(username_key_new).child("Revisi").child(nama_tugas_baru);
-
-        //validasi file (apakah ada?)
-        if(doc_location != null) {
-            final StorageReference storageReference =
-                    storage.child(fileName);
-
-            storageReference.putFile(doc_location)
-                    .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-                        @Override
-                        public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-                            storageReference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
-                                @Override
-                                public void onSuccess(Uri uri) {
-                                    pd.dismiss();
-                                    String uri_doc = uri.toString();
-                                    reference2.getRef().child("nama_file").setValue(fileName);
-                                    reference2.getRef().child("url_document").setValue(uri_doc);
-                                    reference2.getRef().child("mhs_id").setValue(username_key_new);
-                                }
-                            });
-
-                        }
-                    })
-                    .addOnFailureListener(new OnFailureListener() {
-                        @Override
-                        public void onFailure(@NonNull Exception exception) {
-                            // Handle unsuccessful uploads
-                            pd.dismiss();
-                        }
-                    }).addOnProgressListener(new OnProgressListener<UploadTask.TaskSnapshot>() {
-                @Override
-                public void onProgress(@NonNull UploadTask.TaskSnapshot taskSnapshot) {
-                    double progressPercent = (100.00 * taskSnapshot.getBytesTransferred() / taskSnapshot.getTotalByteCount());
-                    pd.setMessage("Percent : " + (int) progressPercent + "%");
-                    pd.show();
-                }
-            });
-        }
-    }
-
 
     public long downloadFile(ValueEventListener context, String fileName, String destinationDirectory, String url) {
         final StudentRevisiDetailAct c =this;

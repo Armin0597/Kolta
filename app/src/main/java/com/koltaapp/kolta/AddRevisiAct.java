@@ -35,7 +35,9 @@ import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 import com.squareup.picasso.Picasso;
 
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Date;
 
 public class AddRevisiAct extends AppCompatActivity {
     Button btn_save;
@@ -52,6 +54,8 @@ public class AddRevisiAct extends AppCompatActivity {
     String USERNAME_KEY = "usernamekey";
     String username_key = "";
     String username_key_new = "";
+    String nim = "";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -151,11 +155,11 @@ public class AddRevisiAct extends AppCompatActivity {
                         .child(username_key_new).child("bimbingan").child(new_username).child("tugas").child(edit_nama_revisi.getText().toString());
 
                 final String fileName;
-                Cursor cursor = getContentResolver().query(doc_location,null,null,null,null);
-                cursor.moveToFirst();
-                int idx = cursor.getColumnIndex(OpenableColumns.DISPLAY_NAME);
-                fileName = cursor.getString(idx);
-                cursor.close();
+                long yourmilliseconds = System.currentTimeMillis();
+                SimpleDateFormat simpleDateFormat = new SimpleDateFormat("ddMMyyyykkmm");
+                Date resultdate = new Date(yourmilliseconds);
+                String time = simpleDateFormat.format(resultdate);
+                fileName = "rev_"+"bimb_"+nim+"_"+time+"."+getFileExtension(doc_location);
 
                 if(doc_location != null){
                     final StorageReference storageReference =
@@ -242,19 +246,36 @@ public class AddRevisiAct extends AppCompatActivity {
     }
 
     @Override
-    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable final Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
         if (requestCode == doc_max && resultCode == RESULT_OK && data != null && data.getData() != null) {
             doc_location = data.getData();
 
-            final String fileName;
-            Cursor cursor = getContentResolver().query(doc_location,null,null,null,null);
-            cursor.moveToFirst();
-            int idx = cursor.getColumnIndex(OpenableColumns.DISPLAY_NAME);
-            fileName = cursor.getString(idx);
-            cursor.close();
-            edit_file_revisi.setText(fileName);
+            final String new_username = getIntent().getStringExtra("username");
+
+            ref_username_mhs = FirebaseDatabase.getInstance().getReference().child("Bimbingan")
+                    .child(username_key_new).child("mahasiswa").child(new_username);
+            ref_username_mhs.addListenerForSingleValueEvent(new ValueEventListener() {
+                @Override
+                public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                    nim = dataSnapshot.child("nim").getValue().toString();
+
+                    final String fileName;
+                    long yourmilliseconds = System.currentTimeMillis();
+                    SimpleDateFormat simpleDateFormat = new SimpleDateFormat("ddMMyyyykkmm");
+                    Date resultdate = new Date(yourmilliseconds);
+                    String time = simpleDateFormat.format(resultdate);
+                    fileName = "rev_"+"bimb_"+nim+"_"+time+"."+getFileExtension(doc_location);
+                    edit_file_revisi.setText(fileName);
+                }
+
+                @Override
+                public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                }
+            });
+
         }
     }
 

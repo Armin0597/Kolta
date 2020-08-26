@@ -11,6 +11,12 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
 
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
     <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
     <!-- <uses-sdk android:minSdkVersion="14"/> -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -25,6 +31,8 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.koltaapp.kolta.AddFinalDocAct" />
+        <activity android:name="com.koltaapp.kolta.EditRevisiAct" />
         <activity android:name="com.koltaapp.kolta.StudentRevisiDetailAct" />
         <activity android:name="com.koltaapp.kolta.StudentRevisiMainAct" />
         <activity android:name="com.koltaapp.kolta.RevisiDetailAct" />

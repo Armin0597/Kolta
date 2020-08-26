@@ -85,7 +85,8 @@ public class FinalDocAct extends AppCompatActivity {
         add_draf_final.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                findDoc();
+                Intent gotoaddfinal = new Intent(FinalDocAct.this, AddFinalDocAct.class);
+                startActivity(gotoaddfinal);
             }
         });
 

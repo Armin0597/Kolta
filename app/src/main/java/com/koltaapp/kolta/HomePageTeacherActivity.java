@@ -33,6 +33,7 @@ public class HomePageTeacherActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page_teacher_activity);
 
+        //mendapatkan data user dari lokal storage
         getUsernameLocal();
 
         //mendaftarkan variabel
@@ -46,9 +47,9 @@ public class HomePageTeacherActivity extends AppCompatActivity {
         page_revisi = findViewById(R.id.page_revisi);
 
 
+        //mengambil data dari firebase
         reference = FirebaseDatabase.getInstance().getReference()
                 .child("Dosen").child(username_key_new);
-
         reference.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -64,6 +65,7 @@ public class HomePageTeacherActivity extends AppCompatActivity {
             }
         });
 
+        //intent menuju profile
         photo_home_user.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -72,6 +74,7 @@ public class HomePageTeacherActivity extends AppCompatActivity {
             }
         });
 
+        //intent menuju bimbingan
         page_bimbingan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -80,6 +83,7 @@ public class HomePageTeacherActivity extends AppCompatActivity {
             }
         });
 
+        //intent menuju presensi
         page_kehadiran.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -88,6 +92,7 @@ public class HomePageTeacherActivity extends AppCompatActivity {
             }
         });
 
+        //intent menuju daftar mahasiswa
         page_mahasiswa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -96,6 +101,7 @@ public class HomePageTeacherActivity extends AppCompatActivity {
             }
         });
 
+        //intent menuju jadwal
         page_jadwal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -104,6 +110,7 @@ public class HomePageTeacherActivity extends AppCompatActivity {
             }
         });
 
+        //intent menuju revisi
         page_revisi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

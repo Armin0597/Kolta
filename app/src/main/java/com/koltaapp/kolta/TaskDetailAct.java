@@ -63,40 +63,40 @@ public class TaskDetailAct extends AppCompatActivity {
 
         nama_tugas = findViewById(R.id.nama_tugas);
         deskripsi = findViewById(R.id.deskripsi);
-        file_tugas = findViewById(R.id.file_tugas);
+        //file_tugas = findViewById(R.id.file_tugas);
         xdate = findViewById(R.id.xdate);
         xdate_pertemuan = findViewById(R.id.xdate_pertemuan);
         btn_back = findViewById(R.id.btn_back);
         photo_profile = findViewById(R.id.photo_profile);
 
-        SpannableString content = new SpannableString(nama_file_baru);
-        content.setSpan(new UnderlineSpan(), 0, content.length(), 0);
+//        SpannableString content = new SpannableString(nama_file_baru);
+//        content.setSpan(new UnderlineSpan(), 0, content.length(), 0);
 
         nama_tugas.setText(nama_tugas_baru);
         xdate.setText(tanggal_baru);
         xdate_pertemuan.setText(tanggal_pertemuan);
         deskripsi.setText(deskripsi_baru);
-        file_tugas.setText(content);
+        //file_tugas.setText(content);
 
-        file_tugas.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                reference =FirebaseDatabase.getInstance().getReference().child("Bimbingan").child(username_key_new)
-                        .child(username_baru).child("tugas");
-                reference.addListenerForSingleValueEvent(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                        downloadFile(this,nama_file_baru,
-                                Environment.getExternalStorageState(new File(Environment.DIRECTORY_DOWNLOADS)),url_document_baru);
-                    }
-
-                    @Override
-                    public void onCancelled(@NonNull DatabaseError databaseError) {
-
-                    }
-                });
-            }
-        });
+//        file_tugas.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                reference =FirebaseDatabase.getInstance().getReference().child("Bimbingan").child(username_key_new)
+//                        .child(username_baru).child("tugas");
+//                reference.addListenerForSingleValueEvent(new ValueEventListener() {
+//                    @Override
+//                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+//                        downloadFile(this,nama_file_baru,
+//                                Environment.getExternalStorageState(new File(Environment.DIRECTORY_DOWNLOADS)),url_document_baru);
+//                    }
+//
+//                    @Override
+//                    public void onCancelled(@NonNull DatabaseError databaseError) {
+//
+//                    }
+//                });
+//            }
+//        });
 
         list_draft_student = findViewById(R.id.list_draft_student);
         list_draft_student.setLayoutManager(new LinearLayoutManager(this));

@@ -120,6 +120,18 @@
         "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\list_revisi_task_item.xml"
     },
     {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_delete_24.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\drawable\\ic_baseline_delete_24.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_edit_revisi.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\activity_edit_revisi.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bg_btn_red_circle.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\drawable\\bg_btn_red_circle.xml"
+    },
+    {
         "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_revisi_main.xml.flat",
         "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\activity_revisi_main.xml"
     },
@@ -276,6 +288,10 @@
         "source": "D:\\Kolta\\app\\src\\main\\res\\font\\mregular.ttf"
     },
     {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_add_final_doc.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\activity_add_final_doc.xml"
+    },
+    {
         "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_icon_finaldoc.png.flat",
         "source": "D:\\Kolta\\app\\src\\main\\res\\drawable\\icon_finaldoc.png"
     },
@@ -408,6 +424,10 @@
         "source": "D:\\Kolta\\app\\src\\main\\res\\drawable\\ic_arrow_back_white.png"
     },
     {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_edit_24.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\drawable\\ic_baseline_edit_24.xml"
+    },
+    {
         "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_icon_dosen.png.flat",
         "source": "D:\\Kolta\\app\\src\\main\\res\\drawable\\icon_dosen.png"
     },
@@ -426,6 +446,10 @@
     {
         "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_profile_edit_teacher.xml.flat",
         "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\activity_profile_edit_teacher.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_get_started_img.png.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\drawable\\get_started_img.png"
     },
     {
         "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_list_student_item.xml.flat",

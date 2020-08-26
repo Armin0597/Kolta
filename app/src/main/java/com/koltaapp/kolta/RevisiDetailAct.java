@@ -21,6 +21,7 @@ import android.text.style.UnderlineSpan;
 import android.view.View;
 import android.webkit.MimeTypeMap;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -45,6 +46,7 @@ public class RevisiDetailAct extends AppCompatActivity {
     DatabaseReference reference,reference2;
     StorageReference storage;
     Button btn_back;
+    ImageButton btn_update,btn_delete;
 
     DownloadManager downloadManager;
 
@@ -67,11 +69,11 @@ public class RevisiDetailAct extends AppCompatActivity {
         getUsernameLocal();
 
         final String nama_tugas_baru = getIntent().getStringExtra("nama_revisi");
-        String nama_file_baru = getIntent().getStringExtra("nama_file");
+        final String nama_file_baru = getIntent().getStringExtra("nama_file");
         final String url_file_baru = getIntent().getStringExtra("url_document");
-        String deskripsi_baru = getIntent().getStringExtra("deskripsi");
-        String tanggal_baru = getIntent().getStringExtra("tanggal");
-        String tanggal_pertemuan_baru = getIntent().getStringExtra("tanggal_pertemuan");
+        final String deskripsi_baru = getIntent().getStringExtra("deskripsi");
+        final String tanggal_baru = getIntent().getStringExtra("tanggal");
+        final String tanggal_pertemuan_baru = getIntent().getStringExtra("tanggal_pertemuan");
         final String username_baru = getIntent().getStringExtra("username");
 
         nama_tugas = findViewById(R.id.nama_tugas);
@@ -80,29 +82,8 @@ public class RevisiDetailAct extends AppCompatActivity {
         xdate_pertemuan = findViewById(R.id.xdate_pertemuan);
         file_revisi = findViewById(R.id.file_revisi);
         btn_back = findViewById(R.id.btn_back);
-
-        list_draft_student = findViewById(R.id.list_draft_student);
-        list_draft_student.setLayoutManager(new LinearLayoutManager(this));
-        listRevisiDrafTeacherItems = new ArrayList<ListRevisiDrafTeacherItem>();
-
-        reference = FirebaseDatabase.getInstance().getReference().child("RevisiDraf").child(username_baru).child(nama_tugas_baru);
-        reference.addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                for (DataSnapshot dataSnapshot1: dataSnapshot.getChildren()){
-                    ListRevisiDrafTeacherItem p = dataSnapshot1.getValue(ListRevisiDrafTeacherItem.class);
-                    listRevisiDrafTeacherItems.add(p);
-                }
-                listRevisiDrafTeacherAdapter = new ListRevisiDrafTeacherAdapter(RevisiDetailAct.this, listRevisiDrafTeacherItems);
-                list_draft_student.setAdapter(listRevisiDrafTeacherAdapter);
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
-
-            }
-        });
-
+//        btn_update = findViewById(R.id.btn_update);
+//        btn_delete = findViewById(R.id.btn_delete);
 
         SpannableString content = new SpannableString(nama_file_baru);
         content.setSpan(new UnderlineSpan(), 0, content.length(), 0);
@@ -132,6 +113,43 @@ public class RevisiDetailAct extends AppCompatActivity {
                 });
             }
         });
+
+//        btn_delete.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                reference = FirebaseDatabase.getInstance().getReference().child(username_key_new)
+//                        .child("Revisi").child(username_key_new).child("bimbingan").child(username_baru)
+//                        .child("tugas").child(nama_tugas_baru);
+//                reference.addListenerForSingleValueEvent(new ValueEventListener() {
+//                    @Override
+//                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+//                        dataSnapshot.getRef().removeValue();
+//                        Intent gotorevisi = new Intent(RevisiDetailAct.this,RevisiMainAct.class);
+//                        startActivity(gotorevisi);
+//                    }
+//
+//                    @Override
+//                    public void onCancelled(@NonNull DatabaseError databaseError) {
+//
+//                    }
+//                });
+//            }
+//        });
+
+//        btn_update.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent gotoeditrevisi = new Intent(RevisiDetailAct.this,EditRevisiAct.class);
+//                gotoeditrevisi.putExtra("username",username_baru);
+//                gotoeditrevisi.putExtra("nama_file",nama_file_baru);
+//                gotoeditrevisi.putExtra("nama_revisi",nama_tugas_baru);
+//                gotoeditrevisi.putExtra("url_document",url_file_baru);
+//                gotoeditrevisi.putExtra("deskripsi",deskripsi_baru);
+//                gotoeditrevisi.putExtra("tanggal",tanggal_baru);
+//                gotoeditrevisi.putExtra("tanggal_pertemuan",tanggal_pertemuan_baru);
+//                startActivity(gotoeditrevisi);
+//            }
+//        });
 
         btn_back.setOnClickListener(new View.OnClickListener() {
             @Override

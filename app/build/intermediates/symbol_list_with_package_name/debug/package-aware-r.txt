@@ -1058,6 +1058,7 @@ drawable avd_show_password
 drawable bg_btn_blue_circle
 drawable bg_btn_blue_dark
 drawable bg_btn_blue_primary
+drawable bg_btn_red_circle
 drawable bg_btn_white_primary
 drawable bg_input_disable
 drawable bg_input_edit
@@ -1091,6 +1092,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable get_started_img
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_arr_back_white
@@ -1099,6 +1101,8 @@ drawable ic_arrow_back_black_24dp
 drawable ic_arrow_back_white
 drawable ic_attach
 drawable ic_back
+drawable ic_baseline_delete_24
+drawable ic_baseline_edit_24
 drawable ic_calendar
 drawable ic_calendar_grey
 drawable ic_calendar_medium_grey
@@ -1199,7 +1203,6 @@ id activity_chooser_view_content
 id add
 id add_bimbingan
 id add_draf_final
-id add_draf_revisi
 id add_presensi
 id add_revisi
 id add_task
@@ -1262,6 +1265,7 @@ id disableHome
 id dosen_page
 id edit_deskripsi_revisi
 id edit_deskripsi_tugas
+id edit_file
 id edit_file_revisi
 id edit_file_tugas
 id edit_kegiatan
@@ -1279,9 +1283,7 @@ id enterAlwaysCollapsed
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
-id file_bimbingan
 id file_revisi
-id file_tugas
 id fill
 id fill_horizontal
 id fill_vertical
@@ -1289,6 +1291,7 @@ id filled
 id finaldoc_page
 id fixed
 id forever
+id get_started_img
 id ghost_view
 id gone
 id group_divider
@@ -1548,6 +1551,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_add_final_doc
 layout activity_add_presensi
 layout activity_add_revisi
 layout activity_add_task
@@ -1557,6 +1561,7 @@ layout activity_choose_role
 layout activity_dosen_detail
 layout activity_dosen_list
 layout activity_edit_profil
+layout activity_edit_revisi
 layout activity_final_doc
 layout activity_get_started
 layout activity_home_page
