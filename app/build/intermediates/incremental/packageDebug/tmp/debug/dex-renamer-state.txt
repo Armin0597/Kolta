@@ -1,4 +1,4 @@
-#Mon Aug 24 00:27:32 ICT 2020
+#Fri Sep 04 17:56:41 ICT 2020
 base.0=D\:\\Kolta\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex

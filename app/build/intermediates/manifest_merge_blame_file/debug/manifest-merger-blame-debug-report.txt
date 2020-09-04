@@ -32,7 +32,7 @@
 21-->[com.google.firebase:firebase-database:19.2.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\faf5133ba0b33a2fde13b99aa002026c\jetified-firebase-database-19.2.1\AndroidManifest.xml:25:22-76
 22
 23    <application
-23-->D:\Kolta\app\src\main\AndroidManifest.xml:13:5-69:19
+23-->D:\Kolta\app\src\main\AndroidManifest.xml:13:5-72:19
 24        android:allowBackup="true"
 24-->D:\Kolta\app\src\main\AndroidManifest.xml:14:9-35
 25        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -49,195 +49,204 @@
 31        android:testOnly="true"
 32        android:theme="@style/AppTheme" >
 32-->D:\Kolta\app\src\main\AndroidManifest.xml:19:9-40
-33        <activity android:name="com.koltaapp.kolta.AddFinalDocAct" />
-33-->D:\Kolta\app\src\main\AndroidManifest.xml:20:9-61
-33-->D:\Kolta\app\src\main\AndroidManifest.xml:20:19-49
-34        <activity android:name="com.koltaapp.kolta.EditRevisiAct" />
-34-->D:\Kolta\app\src\main\AndroidManifest.xml:21:9-51
-34-->D:\Kolta\app\src\main\AndroidManifest.xml:21:19-48
-35        <activity android:name="com.koltaapp.kolta.StudentRevisiDetailAct" />
-35-->D:\Kolta\app\src\main\AndroidManifest.xml:22:9-60
-35-->D:\Kolta\app\src\main\AndroidManifest.xml:22:19-57
-36        <activity android:name="com.koltaapp.kolta.StudentRevisiMainAct" />
-36-->D:\Kolta\app\src\main\AndroidManifest.xml:23:9-58
-36-->D:\Kolta\app\src\main\AndroidManifest.xml:23:19-55
-37        <activity android:name="com.koltaapp.kolta.RevisiDetailAct" />
-37-->D:\Kolta\app\src\main\AndroidManifest.xml:24:9-53
-37-->D:\Kolta\app\src\main\AndroidManifest.xml:24:19-50
-38        <activity android:name="com.koltaapp.kolta.AddRevisiAct" />
-38-->D:\Kolta\app\src\main\AndroidManifest.xml:25:9-50
-38-->D:\Kolta\app\src\main\AndroidManifest.xml:25:19-47
-39        <activity android:name="com.koltaapp.kolta.RevisiTaskAct" />
-39-->D:\Kolta\app\src\main\AndroidManifest.xml:26:9-51
-39-->D:\Kolta\app\src\main\AndroidManifest.xml:26:19-48
-40        <activity android:name="com.koltaapp.kolta.RevisiMainAct" />
-40-->D:\Kolta\app\src\main\AndroidManifest.xml:27:9-51
-40-->D:\Kolta\app\src\main\AndroidManifest.xml:27:19-48
-41        <activity android:name="com.koltaapp.kolta.FinalDocAct" />
-41-->D:\Kolta\app\src\main\AndroidManifest.xml:28:9-49
-41-->D:\Kolta\app\src\main\AndroidManifest.xml:28:19-46
-42        <activity android:name="com.koltaapp.kolta.JadwalStudentAct" />
-42-->D:\Kolta\app\src\main\AndroidManifest.xml:29:9-54
-42-->D:\Kolta\app\src\main\AndroidManifest.xml:29:19-51
-43        <activity android:name="com.koltaapp.kolta.StudentBimbinganDetailAct" />
-43-->D:\Kolta\app\src\main\AndroidManifest.xml:30:9-63
-43-->D:\Kolta\app\src\main\AndroidManifest.xml:30:19-60
-44        <activity android:name="com.koltaapp.kolta.DosenDetailAct" />
-44-->D:\Kolta\app\src\main\AndroidManifest.xml:31:9-52
-44-->D:\Kolta\app\src\main\AndroidManifest.xml:31:19-49
-45        <activity android:name="com.koltaapp.kolta.StudentPresensiMainAct" />
-45-->D:\Kolta\app\src\main\AndroidManifest.xml:32:9-60
-45-->D:\Kolta\app\src\main\AndroidManifest.xml:32:19-57
-46        <activity android:name="com.koltaapp.kolta.StudentBimbinganMainAct" />
-46-->D:\Kolta\app\src\main\AndroidManifest.xml:33:9-61
-46-->D:\Kolta\app\src\main\AndroidManifest.xml:33:19-58
-47        <activity android:name="com.koltaapp.kolta.DosenListAct" />
-47-->D:\Kolta\app\src\main\AndroidManifest.xml:34:9-50
-47-->D:\Kolta\app\src\main\AndroidManifest.xml:34:19-47
-48        <activity android:name="com.koltaapp.kolta.AddPresensiAct" />
-48-->D:\Kolta\app\src\main\AndroidManifest.xml:35:9-52
-48-->D:\Kolta\app\src\main\AndroidManifest.xml:35:19-49
-49        <activity android:name="com.koltaapp.kolta.PresensiStudentAct" />
-49-->D:\Kolta\app\src\main\AndroidManifest.xml:36:9-56
-49-->D:\Kolta\app\src\main\AndroidManifest.xml:36:19-53
-50        <activity android:name="com.koltaapp.kolta.KehadiranMainAct" />
-50-->D:\Kolta\app\src\main\AndroidManifest.xml:37:9-54
-50-->D:\Kolta\app\src\main\AndroidManifest.xml:37:19-51
-51        <activity android:name="com.koltaapp.kolta.TaskMainAct" />
-51-->D:\Kolta\app\src\main\AndroidManifest.xml:38:9-49
-51-->D:\Kolta\app\src\main\AndroidManifest.xml:38:19-46
-52        <activity android:name="com.koltaapp.kolta.JadwalTeacherAct" />
-52-->D:\Kolta\app\src\main\AndroidManifest.xml:39:9-54
-52-->D:\Kolta\app\src\main\AndroidManifest.xml:39:19-51
-53        <activity android:name="com.koltaapp.kolta.TaskDetailAct" />
-53-->D:\Kolta\app\src\main\AndroidManifest.xml:40:9-51
-53-->D:\Kolta\app\src\main\AndroidManifest.xml:40:19-48
-54        <activity android:name="com.koltaapp.kolta.AddTaskAct" />
-54-->D:\Kolta\app\src\main\AndroidManifest.xml:41:9-48
-54-->D:\Kolta\app\src\main\AndroidManifest.xml:41:19-45
-55        <activity android:name="com.koltaapp.kolta.StudentDetailActivity" />
-55-->D:\Kolta\app\src\main\AndroidManifest.xml:42:9-59
-55-->D:\Kolta\app\src\main\AndroidManifest.xml:42:19-56
-56        <activity android:name="com.koltaapp.kolta.StudentListActivity" />
-56-->D:\Kolta\app\src\main\AndroidManifest.xml:43:9-57
-56-->D:\Kolta\app\src\main\AndroidManifest.xml:43:19-54
-57        <activity android:name="com.koltaapp.kolta.TaskTeacherActivity" />
-57-->D:\Kolta\app\src\main\AndroidManifest.xml:44:9-57
-57-->D:\Kolta\app\src\main\AndroidManifest.xml:44:19-54
-58        <activity android:name="com.koltaapp.kolta.ProfileEditTeacherActivity" />
-58-->D:\Kolta\app\src\main\AndroidManifest.xml:45:9-64
-58-->D:\Kolta\app\src\main\AndroidManifest.xml:45:19-61
-59        <activity android:name="com.koltaapp.kolta.ProfilTeacherActivity" />
-59-->D:\Kolta\app\src\main\AndroidManifest.xml:46:9-59
-59-->D:\Kolta\app\src\main\AndroidManifest.xml:46:19-56
-60        <activity android:name="com.koltaapp.kolta.HomePageTeacherActivity" />
-60-->D:\Kolta\app\src\main\AndroidManifest.xml:47:9-61
-60-->D:\Kolta\app\src\main\AndroidManifest.xml:47:19-58
-61        <activity android:name="com.koltaapp.kolta.SignInTeacherActivity" />
-61-->D:\Kolta\app\src\main\AndroidManifest.xml:48:9-59
-61-->D:\Kolta\app\src\main\AndroidManifest.xml:48:19-56
-62        <activity android:name="com.koltaapp.kolta.ChooseLoginRoleActivity" />
-62-->D:\Kolta\app\src\main\AndroidManifest.xml:49:9-61
-62-->D:\Kolta\app\src\main\AndroidManifest.xml:49:19-58
-63        <activity android:name="com.koltaapp.kolta.BimbinganStudentAct" />
-63-->D:\Kolta\app\src\main\AndroidManifest.xml:50:9-57
-63-->D:\Kolta\app\src\main\AndroidManifest.xml:50:19-54
-64        <activity android:name="com.koltaapp.kolta.EditProfilActivity" />
-64-->D:\Kolta\app\src\main\AndroidManifest.xml:51:9-56
-64-->D:\Kolta\app\src\main\AndroidManifest.xml:51:19-53
-65        <activity android:name="com.koltaapp.kolta.ProfilActivity" />
-65-->D:\Kolta\app\src\main\AndroidManifest.xml:52:9-52
-65-->D:\Kolta\app\src\main\AndroidManifest.xml:52:19-49
-66        <activity android:name="com.koltaapp.kolta.HomePageActivity" />
-66-->D:\Kolta\app\src\main\AndroidManifest.xml:53:9-54
-66-->D:\Kolta\app\src\main\AndroidManifest.xml:53:19-51
-67        <activity android:name="com.koltaapp.kolta.UserSignupActivity" />
+33        <activity android:name="com.koltaapp.kolta.AddFinalDocFourAct" />
+33-->D:\Kolta\app\src\main\AndroidManifest.xml:20:9-65
+33-->D:\Kolta\app\src\main\AndroidManifest.xml:20:19-53
+34        <activity android:name="com.koltaapp.kolta.AddFinalDocThreeAct" />
+34-->D:\Kolta\app\src\main\AndroidManifest.xml:21:9-57
+34-->D:\Kolta\app\src\main\AndroidManifest.xml:21:19-54
+35        <activity android:name="com.koltaapp.kolta.AddFinalDocTwoAct" />
+35-->D:\Kolta\app\src\main\AndroidManifest.xml:22:9-55
+35-->D:\Kolta\app\src\main\AndroidManifest.xml:22:19-52
+36        <activity android:name="com.koltaapp.kolta.AddFinalDocAct" />
+36-->D:\Kolta\app\src\main\AndroidManifest.xml:23:9-52
+36-->D:\Kolta\app\src\main\AndroidManifest.xml:23:19-49
+37        <activity android:name="com.koltaapp.kolta.EditRevisiAct" />
+37-->D:\Kolta\app\src\main\AndroidManifest.xml:24:9-51
+37-->D:\Kolta\app\src\main\AndroidManifest.xml:24:19-48
+38        <activity android:name="com.koltaapp.kolta.StudentRevisiDetailAct" />
+38-->D:\Kolta\app\src\main\AndroidManifest.xml:25:9-60
+38-->D:\Kolta\app\src\main\AndroidManifest.xml:25:19-57
+39        <activity android:name="com.koltaapp.kolta.StudentRevisiMainAct" />
+39-->D:\Kolta\app\src\main\AndroidManifest.xml:26:9-58
+39-->D:\Kolta\app\src\main\AndroidManifest.xml:26:19-55
+40        <activity android:name="com.koltaapp.kolta.RevisiDetailAct" />
+40-->D:\Kolta\app\src\main\AndroidManifest.xml:27:9-53
+40-->D:\Kolta\app\src\main\AndroidManifest.xml:27:19-50
+41        <activity android:name="com.koltaapp.kolta.AddRevisiAct" />
+41-->D:\Kolta\app\src\main\AndroidManifest.xml:28:9-50
+41-->D:\Kolta\app\src\main\AndroidManifest.xml:28:19-47
+42        <activity android:name="com.koltaapp.kolta.RevisiTaskAct" />
+42-->D:\Kolta\app\src\main\AndroidManifest.xml:29:9-51
+42-->D:\Kolta\app\src\main\AndroidManifest.xml:29:19-48
+43        <activity android:name="com.koltaapp.kolta.RevisiMainAct" />
+43-->D:\Kolta\app\src\main\AndroidManifest.xml:30:9-51
+43-->D:\Kolta\app\src\main\AndroidManifest.xml:30:19-48
+44        <activity android:name="com.koltaapp.kolta.FinalDocAct" />
+44-->D:\Kolta\app\src\main\AndroidManifest.xml:31:9-49
+44-->D:\Kolta\app\src\main\AndroidManifest.xml:31:19-46
+45        <activity android:name="com.koltaapp.kolta.JadwalStudentAct" />
+45-->D:\Kolta\app\src\main\AndroidManifest.xml:32:9-54
+45-->D:\Kolta\app\src\main\AndroidManifest.xml:32:19-51
+46        <activity android:name="com.koltaapp.kolta.StudentBimbinganDetailAct" />
+46-->D:\Kolta\app\src\main\AndroidManifest.xml:33:9-63
+46-->D:\Kolta\app\src\main\AndroidManifest.xml:33:19-60
+47        <activity android:name="com.koltaapp.kolta.DosenDetailAct" />
+47-->D:\Kolta\app\src\main\AndroidManifest.xml:34:9-52
+47-->D:\Kolta\app\src\main\AndroidManifest.xml:34:19-49
+48        <activity android:name="com.koltaapp.kolta.StudentPresensiMainAct" />
+48-->D:\Kolta\app\src\main\AndroidManifest.xml:35:9-60
+48-->D:\Kolta\app\src\main\AndroidManifest.xml:35:19-57
+49        <activity android:name="com.koltaapp.kolta.StudentBimbinganMainAct" />
+49-->D:\Kolta\app\src\main\AndroidManifest.xml:36:9-61
+49-->D:\Kolta\app\src\main\AndroidManifest.xml:36:19-58
+50        <activity android:name="com.koltaapp.kolta.DosenListAct" />
+50-->D:\Kolta\app\src\main\AndroidManifest.xml:37:9-50
+50-->D:\Kolta\app\src\main\AndroidManifest.xml:37:19-47
+51        <activity android:name="com.koltaapp.kolta.AddPresensiAct" />
+51-->D:\Kolta\app\src\main\AndroidManifest.xml:38:9-52
+51-->D:\Kolta\app\src\main\AndroidManifest.xml:38:19-49
+52        <activity android:name="com.koltaapp.kolta.PresensiStudentAct" />
+52-->D:\Kolta\app\src\main\AndroidManifest.xml:39:9-56
+52-->D:\Kolta\app\src\main\AndroidManifest.xml:39:19-53
+53        <activity android:name="com.koltaapp.kolta.KehadiranMainAct" />
+53-->D:\Kolta\app\src\main\AndroidManifest.xml:40:9-54
+53-->D:\Kolta\app\src\main\AndroidManifest.xml:40:19-51
+54        <activity android:name="com.koltaapp.kolta.TaskMainAct" />
+54-->D:\Kolta\app\src\main\AndroidManifest.xml:41:9-49
+54-->D:\Kolta\app\src\main\AndroidManifest.xml:41:19-46
+55        <activity android:name="com.koltaapp.kolta.JadwalTeacherAct" />
+55-->D:\Kolta\app\src\main\AndroidManifest.xml:42:9-54
+55-->D:\Kolta\app\src\main\AndroidManifest.xml:42:19-51
+56        <activity android:name="com.koltaapp.kolta.TaskDetailAct" />
+56-->D:\Kolta\app\src\main\AndroidManifest.xml:43:9-51
+56-->D:\Kolta\app\src\main\AndroidManifest.xml:43:19-48
+57        <activity android:name="com.koltaapp.kolta.AddTaskAct" />
+57-->D:\Kolta\app\src\main\AndroidManifest.xml:44:9-48
+57-->D:\Kolta\app\src\main\AndroidManifest.xml:44:19-45
+58        <activity android:name="com.koltaapp.kolta.StudentDetailActivity" />
+58-->D:\Kolta\app\src\main\AndroidManifest.xml:45:9-59
+58-->D:\Kolta\app\src\main\AndroidManifest.xml:45:19-56
+59        <activity android:name="com.koltaapp.kolta.StudentListActivity" />
+59-->D:\Kolta\app\src\main\AndroidManifest.xml:46:9-57
+59-->D:\Kolta\app\src\main\AndroidManifest.xml:46:19-54
+60        <activity android:name="com.koltaapp.kolta.TaskTeacherActivity" />
+60-->D:\Kolta\app\src\main\AndroidManifest.xml:47:9-57
+60-->D:\Kolta\app\src\main\AndroidManifest.xml:47:19-54
+61        <activity android:name="com.koltaapp.kolta.ProfileEditTeacherActivity" />
+61-->D:\Kolta\app\src\main\AndroidManifest.xml:48:9-64
+61-->D:\Kolta\app\src\main\AndroidManifest.xml:48:19-61
+62        <activity android:name="com.koltaapp.kolta.ProfilTeacherActivity" />
+62-->D:\Kolta\app\src\main\AndroidManifest.xml:49:9-59
+62-->D:\Kolta\app\src\main\AndroidManifest.xml:49:19-56
+63        <activity android:name="com.koltaapp.kolta.HomePageTeacherActivity" />
+63-->D:\Kolta\app\src\main\AndroidManifest.xml:50:9-61
+63-->D:\Kolta\app\src\main\AndroidManifest.xml:50:19-58
+64        <activity android:name="com.koltaapp.kolta.SignInTeacherActivity" />
+64-->D:\Kolta\app\src\main\AndroidManifest.xml:51:9-59
+64-->D:\Kolta\app\src\main\AndroidManifest.xml:51:19-56
+65        <activity android:name="com.koltaapp.kolta.ChooseLoginRoleActivity" />
+65-->D:\Kolta\app\src\main\AndroidManifest.xml:52:9-61
+65-->D:\Kolta\app\src\main\AndroidManifest.xml:52:19-58
+66        <activity android:name="com.koltaapp.kolta.BimbinganStudentAct" />
+66-->D:\Kolta\app\src\main\AndroidManifest.xml:53:9-57
+66-->D:\Kolta\app\src\main\AndroidManifest.xml:53:19-54
+67        <activity android:name="com.koltaapp.kolta.EditProfilActivity" />
 67-->D:\Kolta\app\src\main\AndroidManifest.xml:54:9-56
 67-->D:\Kolta\app\src\main\AndroidManifest.xml:54:19-53
-68        <activity android:name="com.koltaapp.kolta.GetStartedActivity" />
-68-->D:\Kolta\app\src\main\AndroidManifest.xml:55:9-56
-68-->D:\Kolta\app\src\main\AndroidManifest.xml:55:19-53
-69        <activity android:name="com.koltaapp.kolta.ChooseRoleActivity" />
-69-->D:\Kolta\app\src\main\AndroidManifest.xml:56:9-56
-69-->D:\Kolta\app\src\main\AndroidManifest.xml:56:19-53
-70        <activity android:name="com.koltaapp.kolta.RegisterTeacherTwoActivity" />
-70-->D:\Kolta\app\src\main\AndroidManifest.xml:57:9-64
-70-->D:\Kolta\app\src\main\AndroidManifest.xml:57:19-61
-71        <activity android:name="com.koltaapp.kolta.RegisterTeacherOneActivity" />
-71-->D:\Kolta\app\src\main\AndroidManifest.xml:58:9-64
-71-->D:\Kolta\app\src\main\AndroidManifest.xml:58:19-61
-72        <activity android:name="com.koltaapp.kolta.RegisterStudentTwoActivity" />
-72-->D:\Kolta\app\src\main\AndroidManifest.xml:59:9-64
-72-->D:\Kolta\app\src\main\AndroidManifest.xml:59:19-61
-73        <activity android:name="com.koltaapp.kolta.RegisterStudentOneActivity" />
+68        <activity android:name="com.koltaapp.kolta.ProfilActivity" />
+68-->D:\Kolta\app\src\main\AndroidManifest.xml:55:9-52
+68-->D:\Kolta\app\src\main\AndroidManifest.xml:55:19-49
+69        <activity android:name="com.koltaapp.kolta.HomePageActivity" />
+69-->D:\Kolta\app\src\main\AndroidManifest.xml:56:9-54
+69-->D:\Kolta\app\src\main\AndroidManifest.xml:56:19-51
+70        <activity android:name="com.koltaapp.kolta.UserSignupActivity" />
+70-->D:\Kolta\app\src\main\AndroidManifest.xml:57:9-56
+70-->D:\Kolta\app\src\main\AndroidManifest.xml:57:19-53
+71        <activity android:name="com.koltaapp.kolta.GetStartedActivity" />
+71-->D:\Kolta\app\src\main\AndroidManifest.xml:58:9-56
+71-->D:\Kolta\app\src\main\AndroidManifest.xml:58:19-53
+72        <activity android:name="com.koltaapp.kolta.ChooseRoleActivity" />
+72-->D:\Kolta\app\src\main\AndroidManifest.xml:59:9-56
+72-->D:\Kolta\app\src\main\AndroidManifest.xml:59:19-53
+73        <activity android:name="com.koltaapp.kolta.RegisterTeacherTwoActivity" />
 73-->D:\Kolta\app\src\main\AndroidManifest.xml:60:9-64
 73-->D:\Kolta\app\src\main\AndroidManifest.xml:60:19-61
-74        <activity android:name="com.koltaapp.kolta.SignInActivity" />
-74-->D:\Kolta\app\src\main\AndroidManifest.xml:61:9-52
-74-->D:\Kolta\app\src\main\AndroidManifest.xml:61:19-49
-75        <activity android:name="com.koltaapp.kolta.SplashScreenActivity" >
-75-->D:\Kolta\app\src\main\AndroidManifest.xml:62:9-68:20
-75-->D:\Kolta\app\src\main\AndroidManifest.xml:62:19-55
-76            <intent-filter>
-76-->D:\Kolta\app\src\main\AndroidManifest.xml:63:13-67:29
-77                <action android:name="android.intent.action.MAIN" />
-77-->D:\Kolta\app\src\main\AndroidManifest.xml:64:17-69
-77-->D:\Kolta\app\src\main\AndroidManifest.xml:64:25-66
-78
-79                <category android:name="android.intent.category.LAUNCHER" />
-79-->D:\Kolta\app\src\main\AndroidManifest.xml:66:17-77
-79-->D:\Kolta\app\src\main\AndroidManifest.xml:66:27-74
-80            </intent-filter>
-81        </activity>
-82
-83        <service
-83-->[com.google.firebase:firebase-database:19.2.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\faf5133ba0b33a2fde13b99aa002026c\jetified-firebase-database-19.2.1\AndroidManifest.xml:29:9-35:19
-84            android:name="com.google.firebase.components.ComponentDiscoveryService"
-84-->[com.google.firebase:firebase-database:19.2.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\faf5133ba0b33a2fde13b99aa002026c\jetified-firebase-database-19.2.1\AndroidManifest.xml:30:13-84
-85            android:directBootAware="true"
-85-->[com.google.firebase:firebase-common:19.3.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\d5ae2f905dca277d72c2333071856016\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
-86            android:exported="false" >
-86-->[com.google.firebase:firebase-database:19.2.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\faf5133ba0b33a2fde13b99aa002026c\jetified-firebase-database-19.2.1\AndroidManifest.xml:31:13-37
-87            <meta-data
-87-->[com.google.firebase:firebase-database:19.2.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\faf5133ba0b33a2fde13b99aa002026c\jetified-firebase-database-19.2.1\AndroidManifest.xml:32:13-34:85
-88                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
-88-->[com.google.firebase:firebase-database:19.2.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\faf5133ba0b33a2fde13b99aa002026c\jetified-firebase-database-19.2.1\AndroidManifest.xml:33:17-109
-89                android:value="com.google.firebase.components.ComponentRegistrar" />
-89-->[com.google.firebase:firebase-database:19.2.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\faf5133ba0b33a2fde13b99aa002026c\jetified-firebase-database-19.2.1\AndroidManifest.xml:34:17-82
+74        <activity android:name="com.koltaapp.kolta.RegisterTeacherOneActivity" />
+74-->D:\Kolta\app\src\main\AndroidManifest.xml:61:9-64
+74-->D:\Kolta\app\src\main\AndroidManifest.xml:61:19-61
+75        <activity android:name="com.koltaapp.kolta.RegisterStudentTwoActivity" />
+75-->D:\Kolta\app\src\main\AndroidManifest.xml:62:9-64
+75-->D:\Kolta\app\src\main\AndroidManifest.xml:62:19-61
+76        <activity android:name="com.koltaapp.kolta.RegisterStudentOneActivity" />
+76-->D:\Kolta\app\src\main\AndroidManifest.xml:63:9-64
+76-->D:\Kolta\app\src\main\AndroidManifest.xml:63:19-61
+77        <activity android:name="com.koltaapp.kolta.SignInActivity" />
+77-->D:\Kolta\app\src\main\AndroidManifest.xml:64:9-52
+77-->D:\Kolta\app\src\main\AndroidManifest.xml:64:19-49
+78        <activity android:name="com.koltaapp.kolta.SplashScreenActivity" >
+78-->D:\Kolta\app\src\main\AndroidManifest.xml:65:9-71:20
+78-->D:\Kolta\app\src\main\AndroidManifest.xml:65:19-55
+79            <intent-filter>
+79-->D:\Kolta\app\src\main\AndroidManifest.xml:66:13-70:29
+80                <action android:name="android.intent.action.MAIN" />
+80-->D:\Kolta\app\src\main\AndroidManifest.xml:67:17-69
+80-->D:\Kolta\app\src\main\AndroidManifest.xml:67:25-66
+81
+82                <category android:name="android.intent.category.LAUNCHER" />
+82-->D:\Kolta\app\src\main\AndroidManifest.xml:69:17-77
+82-->D:\Kolta\app\src\main\AndroidManifest.xml:69:27-74
+83            </intent-filter>
+84        </activity>
+85
+86        <service
+86-->[com.google.firebase:firebase-database:19.2.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\faf5133ba0b33a2fde13b99aa002026c\jetified-firebase-database-19.2.1\AndroidManifest.xml:29:9-35:19
+87            android:name="com.google.firebase.components.ComponentDiscoveryService"
+87-->[com.google.firebase:firebase-database:19.2.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\faf5133ba0b33a2fde13b99aa002026c\jetified-firebase-database-19.2.1\AndroidManifest.xml:30:13-84
+88            android:directBootAware="true"
+88-->[com.google.firebase:firebase-common:19.3.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\d5ae2f905dca277d72c2333071856016\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
+89            android:exported="false" >
+89-->[com.google.firebase:firebase-database:19.2.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\faf5133ba0b33a2fde13b99aa002026c\jetified-firebase-database-19.2.1\AndroidManifest.xml:31:13-37
 90            <meta-data
-90-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\2bae4ed60042b5247600f13f46496519\jetified-firebase-storage-19.1.1\AndroidManifest.xml:33:13-35:85
-91                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
-91-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\2bae4ed60042b5247600f13f46496519\jetified-firebase-storage-19.1.1\AndroidManifest.xml:34:17-107
+90-->[com.google.firebase:firebase-database:19.2.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\faf5133ba0b33a2fde13b99aa002026c\jetified-firebase-database-19.2.1\AndroidManifest.xml:32:13-34:85
+91                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+91-->[com.google.firebase:firebase-database:19.2.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\faf5133ba0b33a2fde13b99aa002026c\jetified-firebase-database-19.2.1\AndroidManifest.xml:33:17-109
 92                android:value="com.google.firebase.components.ComponentRegistrar" />
-92-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\2bae4ed60042b5247600f13f46496519\jetified-firebase-storage-19.1.1\AndroidManifest.xml:35:17-82
-93        </service>
-94
-95        <activity
-95-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\9d9f5eefb5bcc469207d44112eb03d4a\jetified-play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
-96            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-96-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\9d9f5eefb5bcc469207d44112eb03d4a\jetified-play-services-base-17.0.0\AndroidManifest.xml:24:13-79
-97            android:exported="false"
-97-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\9d9f5eefb5bcc469207d44112eb03d4a\jetified-play-services-base-17.0.0\AndroidManifest.xml:25:13-37
-98            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-98-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\9d9f5eefb5bcc469207d44112eb03d4a\jetified-play-services-base-17.0.0\AndroidManifest.xml:26:13-72
-99
-100        <provider
-100-->[com.google.firebase:firebase-common:19.3.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\d5ae2f905dca277d72c2333071856016\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
-101            android:name="com.google.firebase.provider.FirebaseInitProvider"
-101-->[com.google.firebase:firebase-common:19.3.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\d5ae2f905dca277d72c2333071856016\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
-102            android:authorities="com.koltaapp.kolta.firebaseinitprovider"
-102-->[com.google.firebase:firebase-common:19.3.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\d5ae2f905dca277d72c2333071856016\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
-103            android:exported="false"
-103-->[com.google.firebase:firebase-common:19.3.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\d5ae2f905dca277d72c2333071856016\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
-104            android:initOrder="100" />
-104-->[com.google.firebase:firebase-common:19.3.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\d5ae2f905dca277d72c2333071856016\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
-105
-106        <meta-data
-106-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\f258e3825c6af3b14c7ec1616fae4742\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
-107            android:name="com.google.android.gms.version"
-107-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\f258e3825c6af3b14c7ec1616fae4742\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
-108            android:value="@integer/google_play_services_version" />
-108-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\f258e3825c6af3b14c7ec1616fae4742\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
-109    </application>
-110
-111</manifest>
+92-->[com.google.firebase:firebase-database:19.2.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\faf5133ba0b33a2fde13b99aa002026c\jetified-firebase-database-19.2.1\AndroidManifest.xml:34:17-82
+93            <meta-data
+93-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\2bae4ed60042b5247600f13f46496519\jetified-firebase-storage-19.1.1\AndroidManifest.xml:33:13-35:85
+94                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+94-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\2bae4ed60042b5247600f13f46496519\jetified-firebase-storage-19.1.1\AndroidManifest.xml:34:17-107
+95                android:value="com.google.firebase.components.ComponentRegistrar" />
+95-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\2bae4ed60042b5247600f13f46496519\jetified-firebase-storage-19.1.1\AndroidManifest.xml:35:17-82
+96        </service>
+97
+98        <activity
+98-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\9d9f5eefb5bcc469207d44112eb03d4a\jetified-play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+99            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+99-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\9d9f5eefb5bcc469207d44112eb03d4a\jetified-play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+100            android:exported="false"
+100-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\9d9f5eefb5bcc469207d44112eb03d4a\jetified-play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+101            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+101-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\9d9f5eefb5bcc469207d44112eb03d4a\jetified-play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+102
+103        <provider
+103-->[com.google.firebase:firebase-common:19.3.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\d5ae2f905dca277d72c2333071856016\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
+104            android:name="com.google.firebase.provider.FirebaseInitProvider"
+104-->[com.google.firebase:firebase-common:19.3.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\d5ae2f905dca277d72c2333071856016\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
+105            android:authorities="com.koltaapp.kolta.firebaseinitprovider"
+105-->[com.google.firebase:firebase-common:19.3.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\d5ae2f905dca277d72c2333071856016\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
+106            android:exported="false"
+106-->[com.google.firebase:firebase-common:19.3.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\d5ae2f905dca277d72c2333071856016\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
+107            android:initOrder="100" />
+107-->[com.google.firebase:firebase-common:19.3.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\d5ae2f905dca277d72c2333071856016\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
+108
+109        <meta-data
+109-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\f258e3825c6af3b14c7ec1616fae4742\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+110            android:name="com.google.android.gms.version"
+110-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\f258e3825c6af3b14c7ec1616fae4742\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+111            android:value="@integer/google_play_services_version" />
+111-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\f258e3825c6af3b14c7ec1616fae4742\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+112    </application>
+113
+114</manifest>

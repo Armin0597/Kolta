@@ -37,9 +37,6 @@ public class FinalDocAct extends AppCompatActivity {
     Button add_draf_final,btn_back;
     RecyclerView list_finaldoc;
 
-    ArrayList<ListBerkasFinItem> listBerkasFinItems;
-    ListBerkasFinAdapter listBerkasFinAdapter;
-
     Uri doc_location;
     Integer doc_max = 1;
 
@@ -59,28 +56,6 @@ public class FinalDocAct extends AppCompatActivity {
 
         btn_back = findViewById(R.id.btn_back);
         add_draf_final = findViewById(R.id.add_draf_final);
-
-        list_finaldoc = findViewById(R.id.list_finaldoc);
-        list_finaldoc.setLayoutManager(new LinearLayoutManager(this));
-        listBerkasFinItems = new ArrayList<ListBerkasFinItem>();
-
-        reference2 = FirebaseDatabase.getInstance().getReference().child("BerkasFinal").child(username_key_new).child("berkas");
-        reference2.addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                for (DataSnapshot dataSnapshot1: dataSnapshot.getChildren()){
-                    ListBerkasFinItem p = dataSnapshot1.getValue(ListBerkasFinItem.class);
-                    listBerkasFinItems.add(p);
-                }
-                listBerkasFinAdapter = new ListBerkasFinAdapter(FinalDocAct.this, listBerkasFinItems);
-                list_finaldoc.setAdapter(listBerkasFinAdapter);
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
-
-            }
-        });
 
         add_draf_final.setOnClickListener(new View.OnClickListener() {
             @Override

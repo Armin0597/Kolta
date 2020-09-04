@@ -64,7 +64,7 @@ public class SplashScreenActivity extends AppCompatActivity {
                 @Override
                 public void run() {
                     //merubah activity ke activity lain
-                    Intent gogethome = new Intent(SplashScreenActivity.this, HomePageTeacherActivity.class);
+                    Intent gogethome = new Intent(SplashScreenActivity.this, HomePageActivity.class);
                     startActivity(gogethome);
                     finish();
                 }

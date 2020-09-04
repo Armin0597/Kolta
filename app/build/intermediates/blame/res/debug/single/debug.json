@@ -24,12 +24,12 @@
         "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\activity_choose_login_role.xml"
     },
     {
-        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_list_student_kehandiran.xml.flat",
-        "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\list_student_kehandiran.xml"
-    },
-    {
         "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bg_input_one.xml.flat",
         "source": "D:\\Kolta\\app\\src\\main\\res\\drawable\\bg_input_one.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_list_student_kehandiran.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\list_student_kehandiran.xml"
     },
     {
         "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_list_revisi_draf_teacher_item.xml.flat",
@@ -64,20 +64,20 @@
         "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\activity_choose_role.xml"
     },
     {
-        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\font_mmbold.ttf.flat",
-        "source": "D:\\Kolta\\app\\src\\main\\res\\font\\mmbold.ttf"
-    },
-    {
         "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_list_dosen_item.xml.flat",
         "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\list_dosen_item.xml"
     },
     {
-        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_list_revisi_main_item.xml.flat",
-        "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\list_revisi_main_item.xml"
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\font_mmbold.ttf.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\font\\mmbold.ttf"
     },
     {
-        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_anggaphoto.jpeg.flat",
-        "source": "D:\\Kolta\\app\\src\\main\\res\\drawable\\anggaphoto.jpeg"
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_add_final_doc_three.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\activity_add_final_doc_three.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_list_revisi_main_item.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\list_revisi_main_item.xml"
     },
     {
         "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_attach.xml.flat",
@@ -102,6 +102,10 @@
     {
         "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_icon_nopic.png.flat",
         "source": "D:\\Kolta\\app\\src\\main\\res\\drawable\\icon_nopic.png"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_upload.png.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\drawable\\ic_upload.png"
     },
     {
         "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_student_bimbingan_main.xml.flat",
@@ -230,6 +234,10 @@
     {
         "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
         "source": "D:\\Kolta\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_add_final_doc_two.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\activity_add_final_doc_two.xml"
     },
     {
         "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_student_revisi_main.xml.flat",
@@ -426,6 +434,10 @@
     {
         "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_edit_24.xml.flat",
         "source": "D:\\Kolta\\app\\src\\main\\res\\drawable\\ic_baseline_edit_24.xml"
+    },
+    {
+        "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_add_final_doc_four.xml.flat",
+        "source": "D:\\Kolta\\app\\src\\main\\res\\layout\\activity_add_final_doc_four.xml"
     },
     {
         "merged": "D:\\Kolta\\app\\build\\intermediates\\res\\merged\\debug\\drawable_icon_dosen.png.flat",

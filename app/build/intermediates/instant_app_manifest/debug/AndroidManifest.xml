@@ -31,6 +31,9 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.koltaapp.kolta.AddFinalDocFourAct" />
+        <activity android:name="com.koltaapp.kolta.AddFinalDocThreeAct" />
+        <activity android:name="com.koltaapp.kolta.AddFinalDocTwoAct" />
         <activity android:name="com.koltaapp.kolta.AddFinalDocAct" />
         <activity android:name="com.koltaapp.kolta.EditRevisiAct" />
         <activity android:name="com.koltaapp.kolta.StudentRevisiDetailAct" />
